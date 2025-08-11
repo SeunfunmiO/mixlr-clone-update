@@ -118,27 +118,40 @@ section h1 {
 }
 
 @media screen and (max-width:768px) {
-  .navLinkss{
+  .navLinkss {
     align-items: flex-start !important;
   }
 
   .linkWrap {
     flex-direction: column-reverse;
-    justify-content: center !important;
-    align-items: end !important;
+    align-items: center;
+    width: 100%;
+    gap: 1rem !important;
+    flex-wrap: wrap ;
+
   }
+
   .linkWrap2 {
-    justify-content: center !important;
-    margin-right: 130px;
-    flex-wrap: wrap !important;
+    display: flex;
+    gap: 2rem !important;
+    width: 100%;
   }
-  .auth-links{
-    justify-content: center !important;
+
+  .linkWrap2 a {
+    display: inline-block;
+    text-align: center;
   }
- 
+
+  .auth-links {
+    justify-content: end !important;
+    width: 100%;
+    gap: 2rem !important;
+    align-items: center !important;
+    margin-top: 10px !important;
+  }
 
   header h1 {
-    padding: 10px 100px;
+    padding: 0px 100px;
     font-size: 40px;
   }
 
@@ -180,27 +193,30 @@ section h1 {
 
 @media screen and (max-width:430px) {
 
-
   nav a,
   .get-started {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .linkWrap2 a:nth-child(3) {
     display: none;
   }
-    /* .navLinkss{
-    padding-left: 0.25rem !important;
-    padding-right: 0.25rem !important;
+
+  .linkWrap2 {
+    gap: 1rem !important;
   }
-    .linkWrap2 {
-    margin-right: 68px;
+
+  .navLinkss {
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
   }
-  .linkWrap {
-    gap: 18px !important;
-  } */
+
+  .auth-links {
+    margin-right: 5px !important;
+  }
+
   header h1 {
-    padding: 10px 30px;
+    padding: 0px 30px;
   }
 
   .product-cardgrid {
@@ -267,13 +283,11 @@ section h1 {
 
 @media screen and (max-width:375px) {
   .linkWrap2 a {
-    gap: 0.5rem !important;
+    font-size: 11px;
   }
-  .linkWrap2{
-    gap:0.7rem !important;
-  }
+
   header h1 {
-    padding: 10px;
+    padding:0px 10px;
   }
 
   .sectionItem {
@@ -283,14 +297,16 @@ section h1 {
   .section3 h2 {
     padding: 50px 22px 30px;
   }
-  /* .navLinkss{
-    padding-left: 0.1rem !important;
-    padding-right: 0.1rem !important;
-  } */
-  
+
 }
 
 @media screen and (max-width:320px) {
+  .linkWrap2 a {
+    font-size: 10px;
+  }
+  .auth-links{
+    gap: 1rem !important;
+  }
   header h1 {
     padding: 11px;
     font-size: 38px;
@@ -299,7 +315,8 @@ section h1 {
   header p {
     font-size: 24px;
   }
-  .product-cardgrid img{
+
+  .product-cardgrid img {
     width: 96%;
   }
 }
